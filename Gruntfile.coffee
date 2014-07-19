@@ -73,7 +73,7 @@ module.exports = (grunt) ->
           ignore: [ 'node_modules/**', 'public/**' ]
           ext: 'coffee'
           watch: [ __dirname ]
-          delay: 2000
+          delay: 1000
               
     ###
     https://github.com/gruntjs/grunt-contrib-watch
