@@ -19,6 +19,7 @@ methodOverride = require 'method-override'
 cookieSession = require 'cookie-session'
 routes =
   user: require './routes/user'
+  artist: require './routes/artist'
 
 http = require 'http'
 path = require 'path'
@@ -107,6 +108,8 @@ app.route '/'
   .all (req, res) ->
     res.send 'It works!'
 
+app.route '/artists/actions/update'
+  .get routes.crawler.update_artist
 server = http.createServer(app)
 server.listen app.get('port'), () ->
   if 'test' isnt app.get('env')

@@ -22,7 +22,8 @@
     "async": "*",
     "lodash": "*",
     "nodemailer": "~0.6.5",
-    "i18n": "*"
+    "i18n": "*",
+    "crawler": "~0.2.6"
   },
   "devDependencies": {
     "chai": "*",
