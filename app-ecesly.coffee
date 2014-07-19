@@ -106,8 +106,7 @@ app.use '/public', express.static(path.join(__dirname, 'public'))
 app.engine 'jade', require('jade').__express
 
 app.route '/'
-  .all (req, res) ->
-    res.send 'It works!'
+  .get routes.artist.index
 
 app.route '/artists/actions/update/:page?'
   .get routes.crawler.update_artist
