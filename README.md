@@ -5,6 +5,7 @@
 
 0. `npm install` 
 0. `bower update`
+0. `migrate up` 데이터베이스 마이그레이션을 진행합니다.
 0. `grunt test` 테스트를 합니다.
 0. `grunt test-verbose` 서버 로그를 테스트에 표시합니다.
 0. `grunt serve` coffee, less 소스코드를 watch-compile하고 파일이 변경되었으면 서버를 restart합니다.
